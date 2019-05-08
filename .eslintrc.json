@@ -27,6 +27,7 @@
     "object-curly-spacing": "off",
     "arrow-parens": "off",
     "new-cap": "off",
+    "comma-dangle": "off",
 
     "@typescript-eslint/prefer-interface": "off",
     "@typescript-eslint/explicit-function-return-type": [

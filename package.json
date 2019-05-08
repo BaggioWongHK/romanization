@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack",
-    "cantonese": "yarn build && node dist/bundle.js zh-hk jyutping src/main.ts"
+    "cantonese": "yarn build && node dist/bundle.js zh-hk jyutping src/main.ts",
+    "lint": "npx eslint src/**"
   },
   "dependencies": {
     "@types/ramda": "^0.26.8",

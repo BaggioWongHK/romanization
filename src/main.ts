@@ -4,7 +4,7 @@ import { LANG_ROMANIZATION_MAP, SUPPORTED_FILE_EXT } from './main.constants';
 import {
   srcLangExists,
   targetRomanizationExists,
-  isFileTypeSupported,
+  isFileTypeSupported
 } from './main.utils';
 import { ERRORS } from './error.constants';
 
@@ -20,10 +20,10 @@ const main = (): void => {
     throw new Error(ERRORS.INSUFFICIENT_ARGS(argsLength));
   }
 
-  /* eslint-disable no-unused-vars, @typescript-eslint/no-unused-vars */
+  // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
   const [, , srcLang, targetRomanization, filePath, outPath = '.'] = args;
-  /* eslint-enable no-unused-vars */
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   readFile(filePath, 'utf-8', (err, data) => {
     if (err) {
       throw new Error(ERRORS.FILE_NOT_EXISTS(filePath));
